@@ -13,30 +13,25 @@ La app tiene que estar modularizada siguiento el patrón MVC.
 
 ### Getters
 
-- node index.js
-  Obtener todos los datos de la DB
-- node index.js --get id <id>
-  Obtener un libro segun su ID
-- node index.js --get title <title>
-  Obtener un libro según su titulo
-- node index.js --get author <author>
-  Obtener libros según autor
-- node index.js --get tag <tagname>
-  Obtener libros según tag
+- node index.js | Obtener todos los datos de la DB
+- node index.js --get id "id" | Obtener un libro segun su ID
+- node index.js --get title "title" | Obtener un libro según su titulo
+- node index.js --get author "author" | Obtener libros según autor
+- node index.js --get tag "tagname" | Obtener libros según tag
 
 ## Setters
 
-- node index --add title <title> author <author> tags <tag1-tag2-tag3>
+- node index --add title "title" author "author" tags ""tag1-tag2-tag3"
   Crea un nueva entrada en la DB con los datos especificados. Al ejecutar este comando, el nuevo libro ingresado tendrá un ID que es generado automaticamente con UUID. Al finalizar correctamente la operación, devolver un mensaje indicando al nombre y el ID generado del nuevo libro creado.
 
-- node index --delete book id <id>
+- node index --delete book id "id"
   Borra un libro de la DB. Al finalizar correctamente la operación, avisar al usuario con un mensaje.
 
 ## Input para manipular la data referente a asuarios:
 
 ## Setters
 
-- node index.js --add user <username> <password>
+- node index.js --add user "username" "password"
   Agrega un nuevo usuario en users.json. El usuario ingresa su contraseña, la cual debe tener al menos 8 caracteres. Al plasmarse en la base de datos, la contraseña debe hashearse con el algoritmo SHA256 en formato hexadecimal con Crypto. Contenido visto en la clase del 9/10/2023. Y además deberá tener un id generado con uuid.
 
 - node index --delete user <password>
