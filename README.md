@@ -34,7 +34,7 @@ La app tiene que estar modularizada siguiento el patrón MVC.
 - node index.js --add user "username" "password"
   Agrega un nuevo usuario en users.json. El usuario ingresa su contraseña, la cual debe tener al menos 8 caracteres. Al plasmarse en la base de datos, la contraseña debe hashearse con el algoritmo SHA256 en formato hexadecimal con Crypto. Contenido visto en la clase del 9/10/2023. Y además deberá tener un id generado con uuid.
 
-- node index --delete user <password>
+- node index --delete user "id"
   Borra un usuario de la base de datos, avisar al usuario un mensaje.
 
 ## A tener en cuenta:
